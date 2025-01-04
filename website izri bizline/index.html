@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IZRI BIZLINE</title>
+    <style>
+      /* CSS Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #landing-page,
+      #main-page {
+        text-align: center;
+        padding: 20px;
+      }
+
+      #landing-page {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f9fa;
+      }
+
+      .logo {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #main-page {
+        display: none;
+        background-color: #f4f4f4;
+      }
+
+      .header-box {
+        width: 80%;
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        background: url(bg.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+      }
+
+      .header-box img {
+        width: 100px;
+        margin-bottom: 10px;
+      }
+
+      .header-box h1 {
+        font-size: 2rem;
+        color: white;
+      }
+
+      .contact-bar {
+        width: 80%;
+        max-width: 900px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 20px;
+        background: #b6afaf;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+
+      .contact-bar a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .products {
+        width: 80%;
+        max-width: 900px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .product {
+        display: flex;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .product img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+
+      .product-info {
+        text-align: left;
+      }
+
+      .location {
+        margin: 50px auto;
+        width: 80%;
+        max-width: 900px;
+        text-align: center;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      footer {
+        width: 80%;
+        max-width: 900px;
+        margin: 30px auto;
+        text-align: center;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      footer a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page Pertama -->
+    <div id="landing-page">
+      <img src="logo.jpg" alt="IZRI BIZLINE Logo" class="logo" />
+      <h1>IZRI BIZLINE</h1>
+      <button onclick="enterSite()">Enter</button>
+    </div>
+
+    <!-- Page Kedua -->
+    <div id="main-page">
+      <!-- Header -->
+      <div class="header-box">
+        <img src="logo.jpg" alt="IZRI BIZLINE Logo" />
+        <h1>IZRI BIZLINE</h1>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact-bar">
+        <a href="https://wa.me/+60182289195" target="_blank">WhatsApp</a>
+        <a href="tel:0182289195">Call</a>
+      </div>
+
+      <!-- Products Section -->
+      <div class="products">
+        <h2>Our Products</h2>
+        <!-- Product 1 -->
+        <div class="product">
+          <img src="img1.jpg" alt="Product 1" />
+          <div class="product-info">
+            <p><strong>Talam</strong></p>
+            <p>- Serimuka</p>
+            <p>- Talam Cendol</p>
+            <p>- Talam Keladi</p>
+            <p>- Talam Jagung</p>
+            <p>- Talam Kasui</p>
+            <p>- Talam Suji</p>
+            <p><strong>Price: RM 40.00</strong></p>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+          <img src="img2.jpg" alt="Product 2" />
+          <div class="product-info">
+            <p><strong>Talam</strong></p>
+            <p>- Talam Koleh Kacang</p>
+            <p>- Talam Lapis Hitam Manis</p>
+            <p>- Talam Lapis Zahirah</p>
+            <p>- Talam Tokyo</p>
+            <p>- Talam Lapis Pelangi</p>
+            <p>- Talam Lapis Kacang Hijau</p>
+            <p><strong>Price: RM 45.00</strong></p>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+          <img src="img3.jpg" alt="Product 2" />
+          <div class="product-info">
+            <p><strong>Talam</strong></p>
+            <p>- Talam Ubi</p>
+            <p>- Talam Daging Berlauk</p>
+            <p><strong>Price: RM 50.00</strong></p>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+          <img src="img4.jpg" alt="Product 2" />
+          <div class="product-info">
+            <p><strong>Talam</strong></p>
+            <p>- Talam Durian</p>
+            <p><strong>Price: RM 55.00</strong></p>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+          <img src="img5.jpg" alt="Product 2" />
+          <div class="product-info">
+            <p><strong>Kek</strong></p>
+            <p>- Kek Pisang</p>
+            <p><strong>Price: RM 30.00</strong></p>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+          <img src="img6.jpg" alt="Product 2" />
+          <div class="product-info">
+            <p><strong>Puding</strong></p>
+            <p>- Puding Coklat Oreo</p>
+            <p><strong>Price: RM 30.00</strong></p>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="product">
+          <img src="img7.jpg" alt="Product 2" />
+          <div class="product-info">
+            <p><strong>Agar-agar</strong></p>
+            <p>- Agar-agar Santan Gula Melaka</p>
+            <p><strong>Price: RM 25.00</strong></p>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="product">
+          <img src="img8.jpg" alt="Product 2" />
+          <div class="product-info">
+            <p><strong>Agar-agar</strong></p>
+            <p>- Agar-agar Santan Pandan</p>
+            <p><strong>Price: RM 25.00</strong></p>
+          </div>
+        </div>
+        <!-- Tambah lagi 6 slot di sini -->
+      </div>
+
+      <!-- Location Section -->
+      <div class="location">
+        <h3>Contact Information</h3>
+        <p>Phone: +60182289195</p>
+        <p>Address: Pasir Gudang,Johor</p>
+      </div>
+
+      <!-- Social Media Section -->
+      <footer>
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com/Talamizri" target="_blank">Facebook </a>
+      </footer>
+    </div>
+
+    <script>
+      function enterSite() {
+        document.getElementById("landing-page").style.display = "none";
+        document.getElementById("main-page").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
